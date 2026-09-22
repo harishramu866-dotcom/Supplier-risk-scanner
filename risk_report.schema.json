@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SupplierRiskReport",
+  "type": "object",
+  "required": ["supplier_name", "search_date", "overall_risk", "categories", "summary", "data_completeness_note"],
+  "properties": {
+    "supplier_name": { "type": "string" },
+    "search_date": { "type": "string", "format": "date" },
+    "overall_risk": { "type": "string", "enum": ["Low", "Medium", "High", "Unknown"] },
+    "categories": {
+      "type": "object",
+      "required": ["labor", "environmental", "sanctions", "financial", "legal"],
+      "properties": {
+        "labor": { "$ref": "#/definitions/category" },
+        "environmental": { "$ref": "#/definitions/category" },
+        "sanctions": { "$ref": "#/definitions/category" },
+        "financial": { "$ref": "#/definitions/category" },
+        "legal": { "$ref": "#/definitions/category" }
+      },
+      "additionalProperties": false
+    },
+    "summary": { "type": "string" },
+    "data_completeness_note": { "type": "string" }
+  },
+  "definitions": {
+    "category": {
+      "type": "object",
+      "required": ["status", "findings"],
+      "properties": {
+        "status": { "type": "string", "enum": ["Clear", "Flagged", "Unknown"] },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim", "source", "confidence"],
+            "properties": {
+              "claim": { "type": "string" },
+              "source": { "type": "string", "format": "uri" },
+              "confidence": { "type": "string", "enum": ["Low", "Medium", "High"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}
