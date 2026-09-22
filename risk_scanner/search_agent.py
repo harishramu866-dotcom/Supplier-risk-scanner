@@ -13,6 +13,8 @@ import anthropic
 import requests
 from dotenv import load_dotenv
 
+from risk_scanner.json_utils import parse_json_object
+
 load_dotenv()
 
 CATEGORY_NAMES = ("labor", "environmental", "sanctions", "financial", "legal")
@@ -67,23 +69,13 @@ def generate_search_queries(
     )
 
     text = "".join(block.text for block in response.content if block.type == "text")
-    queries = _parse_json_object(text)
+    queries = parse_json_object(text)
 
     missing = [name for name in CATEGORY_NAMES if name not in queries]
     if missing:
         raise ValueError(f"model output missing categories: {missing}\nraw output: {text}")
 
     return queries
-
-
-def _parse_json_object(text: str) -> dict:
-    text = text.strip()
-    if text.startswith("```"):
-        text = text.split("```")[1]
-        if text.startswith("json"):
-            text = text[4:]
-        text = text.strip()
-    return json.loads(text)
 
 
 def run_search(query: str, count: int = 5) -> list[dict]:
