@@ -5,6 +5,11 @@ a genuine finding versus noise, producing {status, findings} that matches
 the "category" definition in risk_report.schema.json.
 """
 
+import json
+import os
+import re
+from datetime import datetime
+
 import anthropic
 from dotenv import load_dotenv
 
@@ -12,6 +17,8 @@ from risk_scanner.json_utils import parse_json_object
 from risk_scanner.validation import validate_category_result
 
 load_dotenv()
+
+OUTPUT_DIR = "output"
 
 EXTRACTION_PROMPT = """You are extracting compliance risk findings from web search results about
 a supplier. Review the results below and determine the status of this
@@ -87,9 +94,25 @@ def extract_category_findings(
     return result
 
 
+def save_extraction_result(supplier_name: str, categories: dict, output_dir: str = OUTPUT_DIR) -> str:
+    """Save a stage 3 result to output/<supplier>_extraction_<timestamp>.json. Returns the path."""
+    os.makedirs(output_dir, exist_ok=True)
+    slug = re.sub(r"[^a-z0-9]+", "_", supplier_name.lower()).strip("_")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    path = os.path.join(output_dir, f"{slug}_extraction_{timestamp}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"supplier_name": supplier_name, "categories": categories}, f, indent=2)
+    return path
+
+
 def extract_all_categories(supplier_name: str, raw_results: dict) -> dict:
-    """Run extraction once per category. raw_results: stage 2's {category: {query: [hits]}}."""
-    return {
+    """Run extraction once per category, save the combined result to output/, and return it.
+
+    raw_results: stage 2's {category: {query: [hits]}}.
+    """
+    categories = {
         category: extract_category_findings(supplier_name, category, results_for_category)
         for category, results_for_category in raw_results.items()
     }
+    save_extraction_result(supplier_name, categories)
+    return categories
