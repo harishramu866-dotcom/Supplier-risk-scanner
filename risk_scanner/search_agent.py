@@ -6,6 +6,8 @@ against the Brave Search API and collects raw results.
 
 import json
 import os
+import re
+from datetime import datetime
 
 import anthropic
 import requests
@@ -16,6 +18,8 @@ load_dotenv()
 CATEGORY_NAMES = ("labor", "environmental", "sanctions", "financial", "legal")
 
 BRAVE_SEARCH_URL = "https://api.search.brave.com/res/v1/web/search"
+
+OUTPUT_DIR = "output"
 
 QUERY_GENERATION_PROMPT = """You are researching a supplier for a compliance risk check. Given the
 supplier name below, generate 2-3 targeted web search queries for EACH of
@@ -107,8 +111,21 @@ def run_all_searches(queries_by_category: dict) -> dict:
     }
 
 
+def save_scan_result(result: dict, output_dir: str = OUTPUT_DIR) -> str:
+    """Save a stage 2 result to output/<supplier>_<timestamp>.json. Returns the path."""
+    os.makedirs(output_dir, exist_ok=True)
+    slug = re.sub(r"[^a-z0-9]+", "_", result["supplier_name"].lower()).strip("_")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    path = os.path.join(output_dir, f"{slug}_{timestamp}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
+    return path
+
+
 def scan_supplier(supplier_name: str, context: str | None = None) -> dict:
-    """Full stage 2: generate queries, run them all, return queries + raw results."""
+    """Full stage 2: generate queries, run them all, save the result to output/, and return it."""
     queries = generate_search_queries(supplier_name, context)
     raw_results = run_all_searches(queries)
-    return {"supplier_name": supplier_name, "queries": queries, "raw_results": raw_results}
+    result = {"supplier_name": supplier_name, "queries": queries, "raw_results": raw_results}
+    result["saved_to"] = save_scan_result(result)
+    return result
