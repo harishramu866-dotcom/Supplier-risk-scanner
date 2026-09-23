@@ -1,0 +1,158 @@
+{
+  "supplier_name": "Foxconn Technology Group",
+  "search_date": "2026-09-22",
+  "overall_risk": "High",
+  "categories": {
+    "labor": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "More than 1,000 workers went on strike at Foxconn's Chongqing factory in October 2014 demanding higher wages and better benefits after the company significantly cut overtime hours following reduced HP orders.",
+          "source": "https://www.reuters.com/article/hon-hai-china-dispute/workers-strike-at-foxconn-china-factory-after-hp-order-cut-labour-watchdog-idUSL3N0S41T020141009/",
+          "confidence": "High"
+        },
+        {
+          "claim": "A China Labor Watch report alleged that workers producing iPhones at Foxconn's Zhengzhou facility face wage withholding, illegally long working hours (60-75 hours per week, above China's legal maximum and Apple's 60-hour cap), coercion of student workers onto night shifts for low pay, and intimidation.",
+          "source": "https://www.business-humanrights.org/en/latest-news/china-foxconn-workers-producing-iphone-still-subject-to-wage-withhold-illegally-long-working-hours-coercion-of-student-workers-and-intimidation-new-report-alleges/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Foxconn's Zhengzhou iPhone plant was hit by worker unrest, protests and violent clashes in November 2022 over pay disputes and COVID-19 outbreak management, with Foxconn stating it had fulfilled its payment contracts and denying reports of infected staff living with new recruits.",
+          "source": "https://www.reuters.com/technology/foxconns-zhengzhou-plant-hit-by-fresh-worker-unrest-social-media-livestreams-2022-11-23/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Foxconn confirmed that interns aged 14 to 16 had worked at one of its China campuses for approximately three weeks, in breach of Chinese child labor law.",
+          "source": "https://www.reuters.com/article/technology/foxconn-says-underage-workers-used-in-china-plant-idUSBRE89F1U6/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Foxconn admitted that student intern shifts at one of its Chinese factories violated company policies on working hours for interns.",
+          "source": "https://www.bbc.com/news/business-24486684",
+          "confidence": "High"
+        },
+        {
+          "claim": "A SACOM investigation into iPhone 5 production at Foxconn reported a riot, strikes, coerced student labor, excessive overtime beyond Chinese legal limits, unpaid overtime, lack of ergonomic breaks, and exposure to possibly toxic chemicals.",
+          "source": "https://www.epi.org/blog/foxconn-riot-strikes-coerced-student-labor/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "China Labor Watch documented an October 5, 2012 strike at Zhengzhou Foxconn involving several hundred workers directly in conflict and three to four thousand others refusing to show up for work over roughly two days.",
+          "source": "https://www.epi.org/publication/bp352-polishing-apple-fla-foxconn-labor-rights/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Foxconn faced allegations of using forced student labor, which the company denied, saying schools recruit students under local government supervision and assign teachers to monitor them.",
+          "source": "https://www.cbsnews.com/news/foxconn-faces-allegations-of-forced-student-labor/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "An advocacy report described continuing strikes and worker suicides at Foxconn facilities and cited a Jinghua Times report that students studying unrelated subjects such as food processing or accounting were assigned to Foxconn production lines, including night shifts and overtime.",
+          "source": "https://wrp.org.uk/features/strikes-suicides-continue-at-the-foxconn-factory/",
+          "confidence": "Low"
+        }
+      ]
+    },
+    "environmental": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Environmental groups in China accused Foxconn of discharging heavy-metal-laden wastewater into rivers feeding the Yangtze and Huangpu (a Shanghai drinking water source), allegations Foxconn denied by saying its wastewater meets all relevant emissions standards.",
+          "source": "https://qz.com/111701/foreign-firms-risk-becoming-scapegoats-in-chinas-new-get-tough-environmental-policy",
+          "confidence": "High"
+        },
+        {
+          "claim": "Illinois' Attorney General announced plans to sue the U.S. EPA for allowing Foxconn's proposed Wisconsin plant to operate without stringent pollution controls, after earlier raising concerns with Wisconsin regulators about the plant's water use and wastewater treatment.",
+          "source": "https://www.reuters.com/article/business/environment/illinois-to-sue-epa-for-exempting-foxconn-plant-from-pollution-controls-idUSKBN1I52N9/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Reporting states the EPA exempted Racine County, the site of Foxconn's Wisconsin plant, from federal smog standards and that Foxconn was not required to obtain the usual water pollution permit for discharges into local waterways.",
+          "source": "https://chicago.suntimes.com/2021/11/26/22800959/foxconn-environment-wisconsin-racine-foxconned-lake-michigan-great-lakes-editorial",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Records cited by the Milwaukee Journal Sentinel indicate the Foxconn Wisconsin facility would emit hundreds of tons annually of carbon monoxide, particulates, sulfur dioxide, hazardous air pollutants, VOCs and NOx.",
+          "source": "https://urbanmilwaukee.com/2018/04/03/murphys-law-how-foxconn-will-pollute-wisconsin/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Foxconn's Wisconsin project was granted approval to withdraw roughly 7 million gallons of water per day from Lake Michigan, prompting opposition groups to argue the diversion conflicts with a multi-state and international Great Lakes water agreement.",
+          "source": "https://slashdot.org/story/18/04/29/0615248/foxconn-will-drain-7-million-gallons-of-water-per-day-from-lake-michigan-to-make-lcd-screens",
+          "confidence": "Low"
+        },
+        {
+          "claim": "ESG data for subsidiary Foxconn Industrial Internet reports that 25.66% of its total waste generated was classified as hazardous waste.",
+          "source": "https://tracenable.com/company/foxconn-industrial-internet/waste-management",
+          "confidence": "Low"
+        }
+      ]
+    },
+    "sanctions": {
+      "status": "Unknown",
+      "findings": []
+    },
+    "financial": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Foxconn (Hon Hai) withdrew from a $19.5 billion semiconductor joint venture with India's Vedanta Group in July 2023, abandoning a major announced capital commitment.",
+          "source": "https://www.reuters.com/technology/foxconn-pulls-out-india-chip-jv-with-vedanta-2023-07-10/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Reporting on the India withdrawal notes it followed earlier Foxconn fallouts on large factory investment deals in Wisconsin and with Lordstown Motors, indicating a pattern of abandoned large-scale investment commitments.",
+          "source": "https://www.theverge.com/2023/7/10/23789670/foxconn-india-vedanta-semiconductor-foundry-fallout",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "In Q1 2024 Hon Hai reported revenue of NT$1.32t, down 9.5% year-on-year, missing analyst revenue estimates by 3.7% and missing EPS estimates by 25%.",
+          "source": "https://simplywall.st/stocks/tw/tech/twse-2317/hon-hai-precision-industry-shares",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "For the December quarter, Hon Hai reported actual earnings of $3.23 per share, missing analyst expectations of $3.83 per share by 15.62%.",
+          "source": "https://finance.yahoo.com/news/hon-hai-precision-industry-co-131553707.html",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Hon Hai's first-quarter revenue growth guidance fell short of expectations, prompting an analyst rating downgrade to Hold.",
+          "source": "https://seekingalpha.com/article/4748602-hon-hai-consider-guidance-miss-and-ev-business-growth-rating-downgrade",
+          "confidence": "Low"
+        }
+      ]
+    },
+    "legal": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Lotes Co., Ltd. sued Hon Hai Precision Industry and multiple Foxconn entities in U.S. federal court alleging antitrust violations involving standard-essential patents covering USB 3.0 connectors; the Southern District of New York dismissed the federal antitrust claims for lack of subject matter jurisdiction under the Foreign Trade Antitrust Improvements Act, and the dismissal was appealed to the Second Circuit.",
+          "source": "https://www.courtlistener.com/opinion/2677019/lotes-co-ltd-v-hon-hai-precision-industry-co/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Violation Tracker records 12 enforcement/penalty records against Foxconn Technology Group (Hon Hai Precision Industry) with penalties totaling $505,218,528 since 2000.",
+          "source": "https://violationtracker.goodjobsfirst.org/parent/foxconn-technology-group-hon-hai-precisi",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "FCI USA, Inc. brought patent litigation against Hon Hai Precision Industry in the Northern District of California (No. C-03-4519 JCS), which was resolved by a settlement agreement in which FCI licensed Foxconn for one-piece Level 2 Sockets in exchange for a lump sum payment and ongoing royalties.",
+          "source": "https://casetext.com/case/fci-usa",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Chinese authorities opened tax audits and a land-use investigation into Foxconn's mainland operations, including facilities in Guangdong and Jiangsu, which Beijing characterized as 'normal law enforcement.'",
+          "source": "https://www.scmp.com/tech/big-tech/article/3239113/china-says-investigation-apple-supplier-foxconns-operations-mainland-normal-law-enforcement",
+          "confidence": "High"
+        },
+        {
+          "claim": "China's government stated in October 2024 that employees of Foxconn are under investigation for suspected bribery and embezzlement, following Taiwan's report of their detention.",
+          "source": "https://www.reuters.com/world/asia-pacific/china-says-foxconn-employees-probed-bribery-embezzlement-2024-10-11/",
+          "confidence": "High"
+        }
+      ]
+    }
+  },
+  "summary": "Foxconn is rated High risk, with the most serious concerns in labor: confirmed use of interns aged 14-16 in breach of Chinese child labor law, admitted intern working-hour violations, and repeated reports of excessive overtime, withheld wages, coerced student labor, strikes and violent worker unrest at its Zhengzhou and Chongqing plants. Legal risk is also significant, including roughly $505 million in recorded penalties since 2000, Chinese tax and land-use investigations, and an October 2024 Chinese probe into Foxconn employees for suspected bribery and embezzlement. Environmental findings cover alleged heavy-metal wastewater discharges in China (denied by the company) and pollution, water-use and permitting disputes around its Wisconsin plant, while financial findings point to abandoned large investments (the $19.5bn India joint venture, plus earlier Wisconsin and Lordstown fallouts) and repeated earnings and guidance misses. No category came back clear: labor, environmental, financial and legal are all flagged, and sanctions could not be determined.",
+  "data_completeness_note": "Sanctions is marked \"Unknown\" with no findings at all, so this report should not be read as confirming the supplier is sanctions-free \u2014 that check still needs to be completed before relying on these conclusions."
+}
