@@ -7,6 +7,26 @@
     "supplier_name": { "type": "string" },
     "search_date": { "type": "string", "format": "date" },
     "overall_risk": { "type": "string", "enum": ["Low", "Medium", "High", "Unknown"] },
+    "supplier_context": {
+      "type": "object",
+      "properties": {
+        "country": { "type": "string" },
+        "city": { "type": "string" },
+        "industry": { "type": "string" },
+        "website_domain": { "type": "string" },
+        "parent_company": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "identity_check": {
+      "type": "object",
+      "required": ["status", "note"],
+      "properties": {
+        "status": { "type": "string", "enum": ["Confirmed", "Ambiguous", "Unverified"] },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
     "categories": {
       "type": "object",
       "required": ["labor", "environmental", "sanctions", "financial", "legal"],

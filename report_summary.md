@@ -1,7 +1,7 @@
 # Stage 5 — report summary
 
 **Input:** the completed report (all five categories + overall_risk,
-already computed)
+already computed, plus the identity_check when there is one)
 **Output:** `summary` and `data_completeness_note` fields
 **AI's job here:** turn structured data into something a human reads in
 five seconds — this is a writing task, not a research task, since all the
@@ -16,6 +16,7 @@ what's already here.
 
 Supplier: {supplier_name}
 Overall risk: {overall_risk}
+{identity_block: "Identity check: <status> - <note>", omitted for older reports}
 Categories: {full categories object from stages 3-4}
 
 Write two things:
@@ -23,6 +24,11 @@ Write two things:
 1. summary: one paragraph (3-4 sentences) a compliance reviewer could read
    in five seconds. Lead with the most serious finding if there is one.
    Mention which categories were clear. Plain language, no jargon.
+   If an identity check is shown above and its status is Ambiguous or
+   Unverified, add one more sentence saying so (Ambiguous: findings could not
+   be attributed to a single company; Unverified: the company's identity was
+   not confirmed), so a reader never assumes the right company was confirmed.
+   If the status is Confirmed, or no identity check is shown, do not mention it.
 
 2. data_completeness_note: one sentence flagging any category marked
    "Unknown" and what that means for how much to trust this report. If

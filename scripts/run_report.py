@@ -1,6 +1,6 @@
 """Manual test for stage 4+5 (scoring + report summary): assemble the final report and print it.
 
-Every run saves its result to output/<supplier>_report_<timestamp>.json.
+Every run saves its result to reports/<supplier>_report_<timestamp>.json.
 
 Usage: py scripts/run_report.py [path/to/stage3_extraction_output.json]
 If no path is given, uses the most recently modified "*_extraction_*.json" file in output/.
@@ -30,7 +30,12 @@ def main():
     supplier_name = stage3["supplier_name"]
     categories = stage3["categories"]
 
-    report = assemble_report(supplier_name, categories)
+    report = assemble_report(
+        supplier_name,
+        categories,
+        supplier_context=stage3.get("supplier_context"),
+        identity_check=stage3.get("identity_check"),
+    )
     print(json.dumps(report, indent=2))
 
     path = save_report(report)

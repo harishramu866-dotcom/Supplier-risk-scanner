@@ -1,0 +1,169 @@
+{
+  "supplier_name": "Foxconn Technology Group",
+  "categories": {
+    "labor": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Reuters reported that Foxconn acknowledged hiring teenagers as young as 14 at a Chinese factory, in breach of national law, in connection with its student intern program.",
+          "source": "https://www.reuters.com/article/us-foxconn-teenagers-idUSBRE89F1U620121016/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Foxconn admitted that student interns at one of its Chinese facilities worked night shifts and overtime in violation of company policy and applicable rules.",
+          "source": "https://www.industryweek.com/talent/article/21962210/foxconn-admits-to-intern-labor-violations-in-china",
+          "confidence": "High"
+        },
+        {
+          "claim": "Apple and Foxconn confirmed to the Financial Times that student interns aged 17 to 19 worked illegal overtime assembling the iPhone X at a Foxconn plant.",
+          "source": "https://gizmodo.com/foxconn-reportedly-used-illegal-student-labor-to-manufa-1820638488",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "An investigative report alleged that Foxconn workers producing iPhones face wage withholding, illegally long working hours, coercion of student workers, and intimidation, and that Foxconn violates Chinese law by employing an excessive proportion of temporary 'dispatch' workers.",
+          "source": "https://www.business-humanrights.org/en/latest-news/china-foxconn-workers-producing-iphone-still-subject-to-wage-withhold-illegally-long-working-hours-coercion-of-student-workers-and-intimidation-new-report-alleges/",
+          "confidence": "High"
+        },
+        {
+          "claim": "In November 2022, hundreds to thousands of workers at Foxconn's Zhengzhou iPhone plant staged protests, strikes and violent clashes with police over delayed bonus payments and unsafe working and quarantine conditions.",
+          "source": "https://www.theguardian.com/technology/2022/nov/24/workers-in-running-battles-with-police-at-foxconns-iphone-factory-in-china",
+          "confidence": "High"
+        },
+        {
+          "claim": "A Reuters investigation found that Foxconn systematically avoided hiring married women at its iPhone plant in Sriperumbudur, Tamil Nadu, on the basis that they have greater family responsibilities, pregnancy risk and higher absenteeism.",
+          "source": "https://theprint.in/india/foxconn-india-systematically-avoids-hiring-married-women-at-iphone-plant-reuters-investigation/2147040/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Following reports of discriminatory hiring, Indian authorities sought a report from the Tamil Nadu labour department on Foxconn's recruitment practices, which reportedly involved more than 30 manpower agencies selectively scouting unmarried women candidates.",
+          "source": "https://timesofindia.indiatimes.com/city/chennai/hiring-at-foxconn-report-sought-from-tamil-nadu-labour-dept/articleshow/111308368.cms",
+          "confidence": "High"
+        },
+        {
+          "claim": "Foxconn's Sriperumbudur plant, employing about 15,000 mostly female workers, was shut down for a month and reopened with only 100 workers after a food poisoning incident affecting workers.",
+          "source": "https://www.thehindu.com/news/cities/chennai/foxconn-sriperumbudur-plant-reopens-with-100-workers/article38247402.ece",
+          "confidence": "Medium"
+        }
+      ]
+    },
+    "environmental": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Illinois' Attorney General announced plans to sue the U.S. EPA for allowing a proposed Foxconn plant in Wisconsin to operate without stringent pollution controls.",
+          "source": "https://www.reuters.com/article/business/environment/illinois-to-sue-epa-for-exempting-foxconn-plant-from-pollution-controls-idUSKBN1I52N9/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Wisconsin's 'Foxconn Act' created major environmental exceptions/regulatory waivers for the Foxconn project, which commentators say may invite legal challenges.",
+          "source": "https://city.milwaukee.gov/ImageLibrary/Groups/ccCouncil/District-4-Bauman/PDFs/Foxconn_Company_Profile.pdf",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Chinese authorities accused Foxconn of wastewater pollution in the Taihu Lake area; Foxconn denied the charges, stating its wastewater meets all relevant emissions standards.",
+          "source": "https://qz.com/111701/foreign-firms-risk-becoming-scapegoats-in-chinas-new-get-tough-environmental-policy",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Reporting notes Foxconn's plants in China have faced heavy scrutiny for practices involving the discharge of heavy metals into lakes and rivers and for airborne emissions.",
+          "source": "https://pbswisconsin.org/news-item/environmental-exemptions-for-foxconn-may-invite-legal-challenges/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Wisconsin's Green Fire's air quality work group identified concerns about at least three major air quality issues related to the proposed Foxconn plant.",
+          "source": "https://wigreenfire.org/air-quality-concerns-for-foxconn-plant/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Local reporting raised concerns that Foxconn had not submitted information on how it would treat wastewater well enough for the Racine Water Utility to clean it before discharge into Lake Michigan.",
+          "source": "https://urbanmilwaukee.com/2018/04/03/murphys-law-how-foxconn-will-pollute-wisconsin/",
+          "confidence": "Medium"
+        }
+      ]
+    },
+    "sanctions": {
+      "status": "Unknown",
+      "findings": []
+    },
+    "financial": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Hon Hai (Foxconn) affiliate Sharp reported a surprise ~$1.9 billion full-year loss driven by impairments of 188.5 billion yen tied to its LCD/flat-screen assets, causing both Foxconn and Sharp shares to fall.",
+          "source": "https://www.reuters.com/technology/shares-japans-sharp-tumble-after-19-bln-full-year-loss-2023-05-12/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Reuters Breakingviews reported that Sharp's surprise $1.6 billion writedown in the quarter to March 2023 cast doubt on Foxconn/Hon Hai's control over its 2016 rescue investment and its ability to execute similar deals.",
+          "source": "https://www.reuters.com/breakingviews/foxconns-global-dealmaking-suffers-sharp-shock-2023-05-24/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Foxconn largely failed to deliver on the jobs and investment it promised in Wisconsin despite receiving massive public investment and incentives.",
+          "source": "https://www.jsonline.com/story/money/business/2023/11/10/what-happened-to-foxconn-in-wisconsin-a-timeline/71535498007/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Hon Hai Precision Industry's actual quarterly earnings of $3.23 per share missed analyst expectations of $3.83 per share by 15.62% in the December quarter preceding Q1 2025.",
+          "source": "https://finance.yahoo.com/news/hon-hai-precision-industry-co-131553707.html",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "In Q1 2024 Hon Hai Precision Industry's revenue fell 9.5% year-over-year and missed analyst estimates by 3.7%, while EPS missed analyst estimates by 25%.",
+          "source": "https://simplywall.st/stocks/tw/tech/twse-2317/hon-hai-precision-industry-shares",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "An analyst downgraded Hon Hai Precision Industry after its Q2 2023 financial performance and FY2023 guidance came in below expectations.",
+          "source": "https://seekingalpha.com/article/4629292-hon-hai-q2-results-missed-expectations-rating-downgrade",
+          "confidence": "Low"
+        },
+        {
+          "claim": "An analyst downgraded Hon Hai Precision Industry to Hold citing a guidance miss and concerns around its EV business growth.",
+          "source": "https://seekingalpha.com/article/4748602-hon-hai-consider-guidance-miss-and-ev-business-growth-rating-downgrade",
+          "confidence": "Low"
+        }
+      ]
+    },
+    "legal": {
+      "status": "Flagged",
+      "findings": [
+        {
+          "claim": "Chinese state media reported that Foxconn's key subsidiaries in China were subjected to tax audits on suspicion of violating laws and regulations, and that China's natural resources department conducted on-site investigations into Foxconn's land use in Henan, Hubei and elsewhere.",
+          "source": "https://www.reuters.com/technology/foxconn-faces-tax-audit-land-use-probe-chinese-state-media-2023-10-22/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Reuters reported that sources viewed the Chinese tax probe and land-use investigation into Foxconn as politically motivated.",
+          "source": "https://www.reuters.com/technology/foxconn-shares-drop-after-chinese-report-tax-audit-land-use-probe-2023-10-23/",
+          "confidence": "High"
+        },
+        {
+          "claim": "Around a dozen Foxconn managers were arrested in Taiwan on suspicion of soliciting several million US dollars in kickbacks from iPhone parts suppliers, an allegation Foxconn acknowledged investigating following a Next Magazine report.",
+          "source": "https://www.zdnet.com/article/foxconn-senior-management-arrested-for-alleged-millions-in-kickbacks/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "Lotes Co. sued Hon Hai Precision Industry and Foxconn International Holdings in U.S. federal court, alleging they breached RAND-Zero licensing obligations and threatened Lotes' customers over USB 3.0 connector patents; the court ruled the alleged misconduct fell outside the scope of U.S. antitrust laws.",
+          "source": "https://www.courtlistener.com/opinion/2677019/lotes-co-ltd-v-hon-hai-precision-industry-co/",
+          "confidence": "High"
+        },
+        {
+          "claim": "FCI USA, Inc. brought patent litigation against Hon Hai Precision Industry in the Northern District of California, which was resolved via a settlement agreement licensing Foxconn's one-piece Level 2 Sockets in exchange for a lump sum payment and ongoing royalties.",
+          "source": "https://casetext.com/case/fci-usa",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "PSC Computer Products, Inc. sued Foxconn International, Inc. and Hon Hai Precision Industry for patent infringement in the Central District of California, where the court granted Foxconn summary judgment of non-infringement.",
+          "source": "https://www.courtlistener.com/opinion/784862/psc-computer-products-inc-v-foxconn-international-inc-and-hon-hai/",
+          "confidence": "Medium"
+        },
+        {
+          "claim": "South Korean prosecutors indicted former Samsung executive Choi Jinseog, alleging that after winning a contract with Foxconn in 2018 he used his former employer's supplier network to steal trade secrets.",
+          "source": "https://www.mexicostar.com/news/273884924/former-samsung-exec-charged-with-giving-secrets-to-foxconn",
+          "confidence": "Medium"
+        }
+      ]
+    }
+  }
+}

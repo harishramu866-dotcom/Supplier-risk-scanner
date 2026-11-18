@@ -3,3 +3,4 @@ pytest
 anthropic
 requests
 python-dotenv
+streamlit

@@ -13,13 +13,14 @@ from datetime import date, datetime
 import anthropic
 from dotenv import load_dotenv
 
+from risk_scanner.context import clean_context
 from risk_scanner.json_utils import parse_json_object
 from risk_scanner.scoring import compute_overall_risk
 from risk_scanner.validation import validate_report
 
 load_dotenv()
 
-OUTPUT_DIR = "output"
+REPORTS_DIR = "reports"
 
 SUMMARY_PROMPT = """Write a short risk summary for this supplier, based only on the
 structured findings below. Do not add any new claims — only summarize
@@ -27,13 +28,18 @@ what's already here.
 
 Supplier: {supplier_name}
 Overall risk: {overall_risk}
-Categories: {categories_json}
+{identity_block}Categories: {categories_json}
 
 Write two things:
 
 1. summary: one paragraph (3-4 sentences) a compliance reviewer could read
    in five seconds. Lead with the most serious finding if there is one.
    Mention which categories were clear. Plain language, no jargon.
+   If an identity check is shown above and its status is Ambiguous or
+   Unverified, add one more sentence saying so (Ambiguous: findings could not
+   be attributed to a single company; Unverified: the company's identity was
+   not confirmed), so a reader never assumes the right company was confirmed.
+   If the status is Confirmed, or no identity check is shown, do not mention it.
 
 2. data_completeness_note: one sentence flagging any category marked
    "Unknown" and what that means for how much to trust this report. If
@@ -47,13 +53,18 @@ def generate_summary(
     supplier_name: str,
     overall_risk: str,
     categories: dict,
+    identity_check: dict | None = None,
     client: anthropic.Anthropic | None = None,
 ) -> dict:
     """Stage 5: write the summary + completeness note. Sees only structured findings, never raw search results."""
     client = client or anthropic.Anthropic()
+    identity_block = (
+        f"Identity check: {identity_check['status']} - {identity_check['note']}\n" if identity_check else ""
+    )
     prompt = SUMMARY_PROMPT.format(
         supplier_name=supplier_name,
         overall_risk=overall_risk,
+        identity_block=identity_block,
         categories_json=json.dumps(categories, indent=2),
     )
 
@@ -73,25 +84,40 @@ def generate_summary(
     return result
 
 
-def assemble_report(supplier_name: str, categories: dict) -> dict:
-    """Stage 4 + 5: score the categories, write the summary, assemble the full SupplierRiskReport."""
+def assemble_report(
+    supplier_name: str,
+    categories: dict,
+    supplier_context: dict | None = None,
+    identity_check: dict | None = None,
+) -> dict:
+    """Stage 4 + 5: score the categories, write the summary, assemble the full SupplierRiskReport.
+
+    supplier_context and identity_check are optional and omitted from the report when not given.
+    """
     overall_risk = compute_overall_risk(categories)
-    summary_fields = generate_summary(supplier_name, overall_risk, categories)
+    summary_fields = generate_summary(supplier_name, overall_risk, categories, identity_check)
 
     report = {
         "supplier_name": supplier_name,
         "search_date": date.today().isoformat(),
         "overall_risk": overall_risk,
-        "categories": categories,
-        "summary": summary_fields["summary"],
-        "data_completeness_note": summary_fields["data_completeness_note"],
     }
+    cleaned_context = clean_context(supplier_context)
+    if cleaned_context:
+        report["supplier_context"] = cleaned_context
+    if identity_check:
+        report["identity_check"] = identity_check
+    report.update(
+        categories=categories,
+        summary=summary_fields["summary"],
+        data_completeness_note=summary_fields["data_completeness_note"],
+    )
     validate_report(report)
     return report
 
 
-def save_report(report: dict, output_dir: str = OUTPUT_DIR) -> str:
-    """Save the full report to output/<supplier>_report_<timestamp>.json. Returns the path."""
+def save_report(report: dict, output_dir: str = REPORTS_DIR) -> str:
+    """Save the full report to reports/<supplier>_report_<timestamp>.json. Returns the path."""
     os.makedirs(output_dir, exist_ok=True)
     slug = re.sub(r"[^a-z0-9]+", "_", report["supplier_name"].lower()).strip("_")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

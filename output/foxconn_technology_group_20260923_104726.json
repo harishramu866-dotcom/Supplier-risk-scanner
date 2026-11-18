@@ -1,0 +1,447 @@
+{
+  "supplier_name": "Foxconn Technology Group",
+  "queries": {
+    "labor": [
+      "Foxconn OR \"Hon Hai Precision\" labor violation OR forced labor OR student intern abuse investigation",
+      "Foxconn Zhengzhou OR Shenzhen OR Chennai worker protest OR strike OR riot OR unsafe conditions 2022..2025",
+      "\"Foxconn India\" OR \"Foxconn Sriperumbudur\" discriminatory hiring OR married women OR dormitory food poisoning report"
+    ],
+    "environmental": [
+      "Foxconn OR \"Hon Hai\" environmental fine OR pollution discharge violation China EPA",
+      "\"Foxconn Industrial Internet\" OR Fulian OR Ingrasys emissions OR hazardous waste OR wastewater penalty",
+      "Foxconn Wisconsin OR Vietnam OR India factory environmental permit violation OR groundwater OR air quality complaint"
+    ],
+    "sanctions": [
+      "Foxconn OR \"Hon Hai Precision Industry\" OFAC SDN list OR BIS Entity List OR export control restriction",
+      "Foxconn China Taiwan subsidiary sanctions screening Xinjiang UFLPA withhold release order CBP",
+      "\"Hon Hai\" OR Foxconn EU OR UK OR Japan sanctions list Russia export compliance investigation",
+      "\"\u9d3b\u6d77\u7cbe\u5bc6\u5de5\u696d\" OR \u5bcc\u58eb\u5eb7 \u5236\u88c1 \u51fa\u53e3\u7ba1\u5236 \u5be6\u9ad4\u6e05\u55ae \u7d93\u6fdf\u90e8 \u8abf\u67e5 \u4fc4\u7f85\u65af",
+      "\"Foxconn Industrial Internet\" OR \"Ingrasys\" OR \"Cloud Network Technology\" OR \"FIH Mobile\" OR \"Sharp Corporation\" subsidiary sanctions Entity List Russia restricted party"
+    ],
+    "financial": [
+      "\"Hon Hai Precision\" 2317.TW earnings miss OR profit warning OR credit rating downgrade",
+      "Foxconn OR \"Foxconn Industrial Internet\" 601138 accounting irregularity OR restatement OR auditor concern",
+      "Foxconn writedown OR impairment OR failed investment Sharp OR Vedanta OR Lordstown OR Wisconsin subsidy clawback"
+    ],
+    "legal": [
+      "Foxconn OR \"Hon Hai Precision\" lawsuit OR class action OR settlement patent OR antitrust",
+      "Foxconn China tax audit OR land use investigation OR regulatory probe 2023..2025",
+      "Foxconn executive bribery OR corruption OR trade secret theft indictment OR prosecution"
+    ]
+  },
+  "raw_results": {
+    "labor": {
+      "Foxconn OR \"Hon Hai Precision\" labor violation OR forced labor OR student intern abuse investigation": [
+        {
+          "title": "Foxconn Admits to Intern Labor Violations in China | IndustryWeek",
+          "snippet": "<strong>The company admitted some of its student interns worked night shifts and overtime in violation of company policy in its Chinese facility</strong>.",
+          "url": "https://www.industryweek.com/talent/article/21962210/foxconn-admits-to-intern-labor-violations-in-china"
+        },
+        {
+          "title": "China: Foxconn workers making iPhones still face wage withholding, illegal hours, student coercion, and intimidation, report says - Business and Human Rights Centre",
+          "snippet": "<strong>The investigation highlighted a number of labor rights concerns and alleged that Foxconn is violating Chinese law by employing a large percentage of temporary \u201cdispatch\u201d workers</strong>.",
+          "url": "https://www.business-humanrights.org/en/latest-news/china-foxconn-workers-producing-iphone-still-subject-to-wage-withhold-illegally-long-working-hours-coercion-of-student-workers-and-intimidation-new-report-alleges/"
+        },
+        {
+          "title": "Foxconn admits to interns working overtime, night shifts",
+          "snippet": "Foxconn, the Taiwanese electronics maker that supplies companies such as Apple and Sony, has admitted that <strong>student interns at one of its factories in China have worked shift patterns that are in violation of company policies</strong>.",
+          "url": "https://www.cnbc.com/2013/10/11/foxconn-admits-student-intern-labor-violations-at-china-plant.html"
+        },
+        {
+          "title": "Foxconn Reportedly Used Illegal Student Labor to Manufacture iPhone Xs",
+          "snippet": "Six students, ages 17 to 19, claimed ... laws concerning overtime for student interns. <strong>Both Apple and Foxconn confirmed to the Financial Times that students worked overtime</strong>....",
+          "url": "https://gizmodo.com/foxconn-reportedly-used-illegal-student-labor-to-manufa-1820638488"
+        },
+        {
+          "title": "Foxconn says underage workers used in China plant | Reuters",
+          "snippet": "Foxconn Technology Group, the world&#x27;s largest contract electronics maker, has acknowledged <strong>hiring teenagers as young as 14 in a Chinese factory, in breach of national law</strong>, in a case that raises further questions over its student intern program.",
+          "url": "https://www.reuters.com/article/us-foxconn-teenagers-idUSBRE89F1U620121016/"
+        }
+      ],
+      "Foxconn Zhengzhou OR Shenzhen OR Chennai worker protest OR strike OR riot OR unsafe conditions 2022..2025": [
+        {
+          "title": "Zhengzhou Foxconn protests - Wikipedia",
+          "snippet": "The <strong>Zhengzhou</strong> <strong>Foxconn</strong> <strong>protests</strong>, officially referred to by <strong>Foxconn</strong> Technology Group as the &quot;<strong>Zhengzhou</strong> Mass Gathering Incident&quot;, began in November <strong>2022</strong>. <strong>These</strong> <strong>protests</strong>, <strong>strikes</strong>, and violent clashes were initiated and participated in by some employees at the <strong>Zhengzhou</strong> factory in Henan Province, ...",
+          "url": "https://en.wikipedia.org/wiki/Zhengzhou_Foxconn_protests"
+        },
+        {
+          "title": "Workers clash with police as hundreds protest at iPhone plant in China \u2013 Radio Free Asia",
+          "snippet": "Workers clashed with authorities at Taiwan-invested iPhone maker Foxconn in the central Chinese city of Zhengzhou Wednesday, as hundreds of laborers staged a protest over <strong>delayed bonus payments</strong> amid mounting anger at China\u2019s zero-COVID policy.",
+          "url": "https://www.rfa.org/english/news/china/foxconn-strike-11232022150017.html"
+        },
+        {
+          "title": "Foxconn Protests 2.0: Riots at Zhengzhou's Foxconn Factory as New Workers Enter and Old Problems Remain | Eye on Digital China",
+          "snippet": "<strong>Foxconn employees leaving the bad situation at the factory campus and going home by foot in late October of 2022</strong>.",
+          "url": "https://www.whatsonweibo.com/foxconn-protests-2-0-riots-at-zhengzhous-foxconn-factory-as-new-workers-enter-and-old-problems-remain/"
+        },
+        {
+          "title": "Police beat protesting iPhone workers as Covid cases hit record high in China | Foxconn | The Guardian",
+          "snippet": "Foxconn, the biggest contract assembler ... the iPhone 14 after <strong>thousands of employees walked away from the factory in the central city of Zhengzhou last month after complaints about unsafe working conditions</strong>....",
+          "url": "https://www.theguardian.com/technology/2022/nov/24/workers-in-running-battles-with-police-at-foxconns-iphone-factory-in-china"
+        },
+        {
+          "title": "Reports of violent protests at Foxconn's iPhone factory show ...",
+          "snippet": "By Ananya Bhattacharya\u00b74 min read\u00b7Updated November 24, 2022 ... <strong>Hundreds of workers at a major Foxconn plant appear to have erupted into violent protests</strong>. Videos shared on social media platforms Weibo, Kuaishou, Duoyin, and Twitter $TWTR, ...",
+          "url": "https://qz.com/reports-of-violent-protests-at-foxconn-s-iphone-factory-1849815762"
+        }
+      ],
+      "\"Foxconn India\" OR \"Foxconn Sriperumbudur\" discriminatory hiring OR married women OR dormitory food poisoning report": [
+        {
+          "title": "Foxconn India systematically avoids hiring married women at iPhone plant \u2014 Reuters investigation",
+          "snippet": "New Delhi: Married women are ... at its factory in Tamil Nadu\u2019s Sriperumbudur <strong>because of the view that they have more \u201cfamily responsibilities\u201d than unmarried women</strong>, revealed a Reuters investigation....",
+          "url": "https://theprint.in/india/foxconn-india-systematically-avoids-hiring-married-women-at-iphone-plant-reuters-investigation/2147040/"
+        },
+        {
+          "title": "Reuters report finds Foxconn imposing \u2018no-married women\u2019 rule in Tamil Nadu iPhone plant",
+          "snippet": "Citing the company\u2019s former and current employees, the report said that <strong>family duties, pregnancy and higher absenteeism are some of the reasons why Foxconn did not hire married women at the plant located at Sriperumbudur, near Chennai</strong>.",
+          "url": "https://www.thenewsminute.com/tamil-nadu/reuters-report-finds-foxconn-imposing-no-married-women-rule-in-tamil-nadu-iphone-plant"
+        },
+        {
+          "title": "Foxconn India routinely avoided hiring married women for iPhone plant, claims report \u2013 Firstpost",
+          "snippet": "A recent investigation has brought to light discriminatory hiring practices at Foxconn\u2019s Sriperumbudur iPhone assembly plant in Tamil Nadu, <strong>revealing a troubling trend of systematically excluding married women from employment opportunities</strong>.",
+          "url": "https://www.firstpost.com/tech/foxconn-india-routinely-avoided-hiring-married-women-for-iphone-plant-claims-report-13786161.html"
+        },
+        {
+          "title": "Foxconn Sriperumbudur plant reopens with 100 workers - The Hindu",
+          "snippet": "The plant, which makes Apple iPhones and employs 15,000 people mostly women, was shut down last month after a food poisoning incident",
+          "url": "https://www.thehindu.com/news/cities/chennai/foxconn-sriperumbudur-plant-reopens-with-100-workers/article38247402.ece"
+        },
+        {
+          "title": "Hiring at Foxconn: Report sought from Tamil Nadu labour dept | Chennai News - Times of India",
+          "snippet": "The report said <strong>iPhone workforce is further sub-contracted to more than 30 manpower agencies and they selectively scout for unmarried women candidates</strong>.Taiwan-headquartered electronics giant Foxconn produces iPhones for Apple at its factory in ...",
+          "url": "https://timesofindia.indiatimes.com/city/chennai/hiring-at-foxconn-report-sought-from-tamil-nadu-labour-dept/articleshow/111308368.cms"
+        }
+      ]
+    },
+    "environmental": {
+      "Foxconn OR \"Hon Hai\" environmental fine OR pollution discharge violation China EPA": [
+        {
+          "title": "Hon Hai Technology Group (Foxconn) Issues Environmental Management Manual To Enhance Sustainability Progress - Hon Hai Technology Group",
+          "snippet": "As of July 2024, the Group\u2019s UL2799 validations cover a total of 47 companies including those with core subsidiaries Foxconn Industrial Internet (Fii), Foxconn Interconnect Technology Ltd (FIT) and FIH Mobile Ltd.",
+          "url": "https://www.honhai.com/en-us/press-center/press-releases/latest-news/1400"
+        },
+        {
+          "title": "\u300c Our Focuses - Environment \u300dSpecific Actions - Hon Hai Technology Group",
+          "snippet": "Our core goal is to build zero waste campuses that implement &quot;zero landfill&quot; policies, actively promote recycling and reuse of water resources. The Group has also established comprehensive scientific air pollution management regulations\uff0cand regularly maintain and improve treatment facilities for waste emissions.\u200b\u200b\u200b\u200b\u200b",
+          "url": "https://www.foxconn.com/en-us/CSR/focus-environment?category=key-action"
+        },
+        {
+          "title": "Environmental Exemptions For Foxconn May Invite Legal Challenges",
+          "snippet": "\u201cIn their plants in China, they ... has faced heavy scrutiny for practices involving the <strong>discharge of heavy metals into lakes and rivers and its airborne emissions</strong>....",
+          "url": "https://pbswisconsin.org/news-item/environmental-exemptions-for-foxconn-may-invite-legal-challenges/"
+        },
+        {
+          "title": "Foreign firms risk becoming scapegoats in China\u2019s new get-tough environmental policy",
+          "snippet": "<strong>Foxconn denies the charges, saying that its wastewater \u201cmeets all relevant emissions standards.\u201d</strong> \u00b7 The government has already spent hundreds of millions and shuttered scores of factories in its long-standing Taihu clean-up effort.",
+          "url": "https://qz.com/111701/foreign-firms-risk-becoming-scapegoats-in-chinas-new-get-tough-environmental-policy"
+        },
+        {
+          "title": "Illinois to sue EPA for exempting Foxconn plant from pollution controls | Reuters",
+          "snippet": "The logo of Foxconn, the trading name of Hon Hai Precision Industry, is seen on top of the company&#x27;s building in Taipei, Taiwan March 30, 2018. REUTERS/Tyrone Siu Purchase Licensing Rights, opens new tab \u00b7 WASHINGTON (Reuters) - Illinois&#x27; Attorney General said on Friday she plans to sue the U.S. Environmental Protection Agency for allowing a proposed Foxconn Technology Co Ltd plant in neighboring Wisconsin to operate without stringent pollution controls.",
+          "url": "https://www.reuters.com/article/business/environment/illinois-to-sue-epa-for-exempting-foxconn-plant-from-pollution-controls-idUSKBN1I52N9/"
+        }
+      ],
+      "\"Foxconn Industrial Internet\" OR Fulian OR Ingrasys emissions OR hazardous waste OR wastewater penalty": [
+        {
+          "title": "Foxconn Industrial Internet - Waste Management: Generation, Recovery & Hazardousness",
+          "snippet": "Explore Foxconn Industrial Internet&#x27;s corporate waste data including total waste generation, recovery and disposal trends, and hazardous vs. non-hazardous breakdowns.",
+          "url": "https://tracenable.com/company/foxconn-industrial-internet/waste-management"
+        },
+        {
+          "title": "Foxconn Plant Raises Environmental Worries | Industrial Equipment News",
+          "snippet": "The company also would still need a federal Clean Water Act permit to discharge wastewater and would have to abide by air quality and hazardous waste standards through permits.",
+          "url": "https://www.ien.com/regulation/news/20973787/foxconn-plant-raises-environmental-worries"
+        },
+        {
+          "title": "Foxconn Deal Raises Environmental Questions",
+          "snippet": "The company would also have to provide Racine with the daily volume of its wastewater discharges, she said, and comply with limits on heavy metals, chemicals and other pollutants in the wastewater before it is discharged to the municipal system. Foxconn will either have to ship the waste offsite or build a pre-treatment plant at the factory.",
+          "url": "https://www.governing.com/topics/transportation-infrastructure/tns-foxconn-wisconsin-environmental.html"
+        },
+        {
+          "title": "What are the environmental concerns surrounding the Wisconsin Foxconn plant? \u2013 Chicago Tribune",
+          "snippet": "The company also would still need a federal Clean Water Act permit to discharge wastewater and would have to abide by air quality and hazardous waste standards through permits.",
+          "url": "https://www.chicagotribune.com/2017/08/26/what-are-the-environmental-concerns-surrounding-the-wisconsin-foxconn-plant/"
+        },
+        {
+          "title": "Murphy\u2019s Law: How Foxconn Will Pollute Wisconsin",
+          "snippet": "Foxconn has yet to submit any information to the state Department of Revenue to explain how it will handle water clean up. The key question, says Mathewson, \u201cis whether they will be able to treat the wastewater well enough that the Racine Water Utility can properly clean it before discharging it into the lake.",
+          "url": "https://urbanmilwaukee.com/2018/04/03/murphys-law-how-foxconn-will-pollute-wisconsin/"
+        }
+      ],
+      "Foxconn Wisconsin OR Vietnam OR India factory environmental permit violation OR groundwater OR air quality complaint": [
+        {
+          "title": "Wisconsin Foxconn Technology Group development project | | Wisconsin DNR",
+          "snippet": "The DNR will be working with Foxconn, local government officials and other state and federal agencies to ensure all applicable permit requirements are met, including consideration of any environmental impacts associated with any permits or approvals.",
+          "url": "https://dnr.wisconsin.gov/Business/Foxconn.html"
+        },
+        {
+          "title": "Murphy\u2019s Law: How Foxconn Will Pollute Wisconsin",
+          "snippet": "The federal EPA has already determined that Racine County exceeds tougher ozone requirements established under the Obama administration, but Gov. Walker has asked the Trump administration to set aside these limits. If Walker succeeds, this will be yet another exception for Foxconn, allowing it to violate previously accepted environmental standards.",
+          "url": "https://urbanmilwaukee.com/2018/04/03/murphys-law-how-foxconn-will-pollute-wisconsin/"
+        },
+        {
+          "title": "Environmental concerns with Foxconn plant \u2022 Wisconsin\u2019s Green Fire",
+          "snippet": "Wisconsin\u2019s Green Fire members hope to contribute to public understanding of environmental permits and processes as the project unfolds. Wisconsin\u2019s Green Fire\u2019s air quality work group has identified concerns about at least three major air quality issues related to Foxconn.",
+          "url": "https://wigreenfire.org/air-quality-concerns-for-foxconn-plant/"
+        },
+        {
+          "title": "Foxconn Company Profile Prepared by the Legislative Reference Bureau",
+          "snippet": "Part of Wisconsin\u2019s Foxconn Act creates major environmental exceptions for the project.",
+          "url": "https://city.milwaukee.gov/ImageLibrary/Groups/ccCouncil/District-4-Bauman/PDFs/Foxconn_Company_Profile.pdf"
+        },
+        {
+          "title": "What are the environmental concerns surrounding the Wisconsin Foxconn plant? \u2013 Chicago Tribune",
+          "snippet": "Foxconn Technology Group is being enticed to come to Wisconsin with numerous regulatory waivers, raising concerns from environmentalists who are wary of the company\u2019s reputation in China, where it has been accused of polluting rivers. The Taiwan-based company best known for manufacturing ...",
+          "url": "https://www.chicagotribune.com/2017/08/26/what-are-the-environmental-concerns-surrounding-the-wisconsin-foxconn-plant/"
+        }
+      ]
+    },
+    "sanctions": {
+      "Foxconn OR \"Hon Hai Precision Industry\" OFAC SDN list OR BIS Entity List OR export control restriction": [],
+      "Foxconn China Taiwan subsidiary sanctions screening Xinjiang UFLPA withhold release order CBP": [
+        {
+          "title": "Withhold Release Orders & Findings Dashboard | U.S. Customs and Border Protection",
+          "snippet": "This page contains Withhold Release Orders (WROs) issued by the U.S. Customs and Border Protection\u2019s (CBP) Commissioner and Findings published in the Federal Register. CBP does not generally publicize specific detentions, re-exportations, exclusions, or seizures of the subject merchandise ...",
+          "url": "https://www.cbp.gov/trade/forced-labor/withhold-release-orders-and-findings"
+        },
+        {
+          "title": "The Complete UFLPA Entity List as of 2026 | Z2Data",
+          "snippet": "CBP&#x27;s second means of enforcement is through the UFLPA Entity List. Initially published by the Department of Homeland Security on June 21, 2022, this list consists of organizations that are based in Xinjiang and mine, produce, or manufacture goods using forced labor, and those that collaborate with the Chinese government to recruit, transport, or receive Uyghurs and other persecuted groups from Xinjiang for the purposes of forced labor.",
+          "url": "https://www.z2data.com/insights/the-complete-uflpa-entity-list-as-of-2024/"
+        },
+        {
+          "title": "UFLPA Enforcement & Compliance for Supply Chains | Kharon",
+          "snippet": "That\u2019s just one reason why it\u2019s crucial to screen beyond inclusion on the UFLPA Entity List. CBP leverages multiple intelligence sources\u2014including data from Kharon\u2014to investigate entities with potential forced labor ties, even if they haven\u2019t been formally listed. This means that clearing the Entity List isn\u2019t enough. Screen suppliers and sub-suppliers for hidden risk, like indirect ties to Xinjiang, flagged investors, and even loose connections to state-run labor programs.",
+          "url": "https://www.kharon.com/resources/use-cases/forced-labor/uflpa-enforcement-and-compliance-strategy"
+        },
+        {
+          "title": "UFLPA Forced Labor Detentions By CBP \u2013 Why They Happen And What To Do | Benesch, Friedlander, Coplan & Aronoff LLP",
+          "snippet": "In response, the U.S. has implemented robust trade policies in an effort to combat the abuses taking place in the Xinjiang Region and continues to assess its approach to the issue. ... CBP is at the front lines of the U.S. fight against forced labor. Prior to the UFLPA, one of the mechanisms used to prevent the entry of goods produced by forced labor was to issue Withhold Release Orders (WROs) under Section 307 of the Tariff Act of 1930.",
+          "url": "https://www.beneschlaw.com/resources/uflpa-forced-labor-detentions-by-cbp-why-they-happen-and-what-to-do.html"
+        },
+        {
+          "title": "Uyghur Forced Labor Prevention Act - Wikipedia",
+          "snippet": "In 2026, forensic verification ... with the <strong>UFLPA</strong> was hindered due to greater transshipment of Chinese goods and lack of transparency in supply chain data. In 2023, academics Zhun Xu and Fangfei Lin called <strong>sanctions</strong> <strong>against</strong> <strong>China</strong> &quot;baseless&quot; and &quot;imperialist responses to the crises of global capitalism.&quot; Lin wrote that the allegations of forced labor in <strong>Xinjiang</strong> cotton production ...",
+          "url": "https://en.wikipedia.org/wiki/Uyghur_Forced_Labor_Prevention_Act"
+        }
+      ],
+      "\"Hon Hai\" OR Foxconn EU OR UK OR Japan sanctions list Russia export compliance investigation": [
+        {
+          "title": "Impact of US, UK and EU sanctions and export controls in the Asia-Pacific region - Global Investigations Review",
+          "snippet": "In addition, in a joint effort ... the <strong>Common High Priority List (CHPL), which includes 50 items identified by six-digit harmonised system (HS) codes that Russia seeks to procure for its weapons programmes</strong>....",
+          "url": "https://globalinvestigationsreview.com/guide/the-guide-sanctions/sixth-edition/article/impact-of-us-uk-and-eu-sanctions-and-export-controls-in-the-asia-pacific-region"
+        },
+        {
+          "title": "List of Sanctioned Countries by OFAC, UN, and EU (2026) - Sanction Scanner",
+          "snippet": "The UK\u2019s sanctions list includes the following countries: Afghanistan, Belarus, Bosnia and Herzegovina, Burundi, Central African Republic, Democratic Republic of Congo, Iran, Iraq, Lebanon, Libya, Mali, Myanmar, Nicaragua, North Korea, Russia, Somalia, Syria, Venezuela, Yemen, and Zimbabwe.",
+          "url": "https://www.sanctionscanner.com/blog/list-of-sanctioned-countries-by-ofac-un-and-eu-2026-1103"
+        },
+        {
+          "title": "Tit for tat? China blacklists more EU firms in retaliation for Russia sanctions - EU Perspectives",
+          "snippet": "The package adds <strong>51 new entities to the list of those facing tighter restrictions on dual-use goods</strong>. Among them are 14 companies from China and Hong Kong, which the EU says are supporting Russia\u2019s military production.",
+          "url": "https://euperspectives.eu/2026/07/china-export-ban-eu-firms-russia-sanctions/"
+        },
+        {
+          "title": "Hong Kong firms feed European tech to Russia\u2019s war in Ukraine, report says - ICIJ",
+          "snippet": "The court records also included information about a Hong Kong entity that was part of the illicit procurement network, according to investigators. In 2024, the intermediary was used to ship an Italian manufactured drilling head officially declared as \u201cworking tools\u201d to a Russian buyer, the records say. In a recent interview with The Guardian newspaper, the EU\u2019s sanctions envoy David O\u2019Sullivan said that, while evasion persists, the sanctions against Russia have proven effective in crippling its economic and military power and that many countries outside the EU are helping the efforts.",
+          "url": "https://www.icij.org/news/2026/02/hong-kong-firms-feed-european-tech-to-russias-war-in-ukraine-report-says/"
+        },
+        {
+          "title": "Cross-Border Compliance: The effect of EU and UK Sanctions on Chinese companies",
+          "snippet": "These companies are listed in <strong>Annex IV of Council Regulation (EU) No 833/2014</strong> (the \u201cEU Russia Sanctions Regulation\u201d) (&quot;Annex IV&quot;), which includes several companies incorporated in Mainland China and Hong Kong.",
+          "url": "https://www.hlc.com/en/publications/crossborder-compliance-the-effect-of-eu-and-uk-sanctions-on-chinese-companies"
+        }
+      ],
+      "\"\u9d3b\u6d77\u7cbe\u5bc6\u5de5\u696d\" OR \u5bcc\u58eb\u5eb7 \u5236\u88c1 \u51fa\u53e3\u7ba1\u5236 \u5be6\u9ad4\u6e05\u55ae \u7d93\u6fdf\u90e8 \u8abf\u67e5 \u4fc4\u7f85\u65af": [
+        {
+          "title": "\u7f8e\u570b\u4e09\u5927\u90e8\u9580\u767c400\u5236\u88c1\u540d\u55ae \u672c\u53f0\u8d77\u5e95\u5176\u4e2d33\u9593\u9999\u6e2f\u516c\u53f8 \u2013 RFA \u81ea\u7531\u4e9e\u6d32\u96fb\u53f0\u7cb5\u8a9e\u90e8",
+          "snippet": "\u8a18\u8005\u4ea6\u64da\u7f8e\u570b\u53f8\u6cd5\u90e8 \u6587\u4ef6\u767c\u73fe,\u5e74\u5c4644\u6b72\u7684\u4fc4\u7f85\u65af\u516c\u6c11\u6ce2\u65af\u6258\u6c83\u4f0a(Denis Postovoy),\u4eca\u5e749\u670816\u65e5\u5728\u7f8e\u570b\u4f5b\u7f85\u91cc\u9054\u5dde\u5c45\u4f4f\u5730\u88ab\u6355\u3002\u8d77\u8a34\u66f8\u6307\u63a7, Postovoy\u5bc6\u8b00\u9055\u53cd\u300a\u51fa\u53e3\u7ba1\u5236\u6539\u9769\u6cd5\u6848\u300b \u3001\u8d70\u79c1\u3001\u6d17\u9ed1\u9322\u548c\u6b3a\u9a19\u7f8e\u570b,\u975e\u6cd5\u5411\u4fc4\u7f85\u65af\u51fa\u53e3\u7f8e\u570b\u8ecd\u7528\u5fae\u96fb\u5b50\u7522\u54c1,\u800c Postovoy\u6301\u6709\u591a\u9593\u516c\u53f8\u5305\u62ec\u7e3d\u90e8\u4f4d\u65bc\u9999\u6e2f\u7684 \u300cJove HK Limited\u300d\u3001\u300cWowCube HK Limited\u300d\u3001\u300cJST Group Hong Kong\u300d, \u4ee5\u53ca\u7e3d\u90e8\u4f4d\u65bc\u4fc4\u7f85\u65af\u7684\u300c Vector Group\u300d\u3002\u300cJove HK Limited\u300d\u5728\u9999\u6e2f\u67e5\u518a\u4e2d\u8868\u660e\u662f\u5f9e\u4e8b\u300c\u8868\u660e\u9032\u51fa\u53e3\u8cbf\u6613\u300d\u3002 \u00b7 \u53f0\u7063\u5546\u4eba\u4ea6\u727d\u6d89\u5728\u540d\u55ae\u5167\uff0c\u66fe\u8207\u5bcc\u58eb\u5eb7\u5408\u4f5c",
+          "url": "https://www.rfa.org/cantonese/news/htm/us-hong-kong-sanction-10312024160032.html"
+        }
+      ],
+      "\"Foxconn Industrial Internet\" OR \"Ingrasys\" OR \"Cloud Network Technology\" OR \"FIH Mobile\" OR \"Sharp Corporation\" subsidiary sanctions Entity List Russia restricted party": [
+        {
+          "title": "Foxconn Industrial Internet - Wikipedia",
+          "snippet": "<strong>Foxconn</strong> <strong>Industrial</strong> <strong>Internet</strong> Co., Ltd. (Fii; Chinese: \u5bcc\u58eb\u5eb7\u5de5\u4e1a\u4e92\u8054\u7f51; pinyin: F\u00f9sh\u00eck\u0101ng G\u014dngy\u00e8 H\u00f9li\u00e1nw\u01ceng) is a publicly <strong>listed</strong> company that engages in the manufacture and sale of electrical equipment that includes telecommunications equipment, <strong>cloud</strong> computing equipment, precision ...",
+          "url": "https://en.wikipedia.org/wiki/Foxconn_Industrial_Internet"
+        },
+        {
+          "title": "Foxconn - Wikipedia",
+          "snippet": "Hon Hai Precision <strong>Industry</strong> Co., Ltd. (\u9d3b\u6d77\u7cbe\u5bc6\u5de5\u696d\u80a1\u4efd\u6709\u9650\u516c\u53f8), doing business as Hon Hai <strong>Technology</strong> Group (\u9d3b\u6d77\u79d1\u6280\u96c6\u5718) in Taiwan, <strong>Foxconn</strong> <strong>Technology</strong> Group (\u5bcc\u58eb\u5eb7\u79d1\u6280\u96c6\u56e2) in China, and <strong>Foxconn</strong> (\u5bcc\u58eb\u5eb7) internationally, is a Taiwanese multinational electronics ...",
+          "url": "https://en.wikipedia.org/wiki/Foxconn"
+        },
+        {
+          "title": "Foxconn Industrial Internet | LinkedIn",
+          "snippet": "Foxconn Industrial Internet | 6,591 followers on LinkedIn. \u8d4b\u80fd\u4e2d\u56fd\u667a\u9020\uff0c\u517c\u5584\u5929\u4e0b\u5b9e\u4e1a\u3002 | Foxconn Industrial Internet (Fii) is a world&#x27;s leading provider of intelligent manufacturing integration solutions. It has been listed on A shares in June, 2018 (Stock code: 601138).",
+          "url": "https://www.linkedin.com/company/%E5%AF%8C%E5%A3%AB%E5%BA%B7%E5%B7%A5%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+        },
+        {
+          "title": "Latest News - Hon Hai Technology Group",
+          "snippet": "FIH\u2019s Automotive Electronics team poses for a group photo with the expert team from DEKRA.About FIH Mobile Limited FIH Mobile Limited, a subsidiary of Hon Hai Technology Group (Foxconn), was established in May 2003 and listed on the Hong Kong Stock Exchange in 2005 (Ticker: 2038.HK).",
+          "url": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news?category=Industry+Events"
+        },
+        {
+          "title": "Key Milestones - Hon Hai Technology Group",
+          "snippet": "<strong>FIH Mobile Limited</strong>.",
+          "url": "https://www.foxconn.com/en-us/about/group-profile/key-milestones"
+        }
+      ]
+    },
+    "financial": {
+      "\"Hon Hai Precision\" 2317.TW earnings miss OR profit warning OR credit rating downgrade": [
+        {
+          "title": "Hon Hai: Consider Guidance Miss And EV Business Growth (Rating Downgrade) (OTCMKTS:HNHAF) | Seeking Alpha",
+          "snippet": "My rating for Hon Hai Precision Industry Co., Ltd. (OTCPK:HNHPF) (OTCPK:HNHAF) [2317:TW] is <strong>downgraded to a Hold</strong>.",
+          "url": "https://seekingalpha.com/article/4748602-hon-hai-consider-guidance-miss-and-ev-business-growth-rating-downgrade"
+        },
+        {
+          "title": "Hon Hai: Q2 Results Missed Expectations (Rating Downgrade) (OTCMKTS:HNHPF) | Seeking Alpha",
+          "snippet": "Hon Hai Precision Industry Co., Ltd.&#x27;s Q2 2023 financial performance and FY 2023 guidance were below expectations. Click here to read an analysis on HNHPF stock.",
+          "url": "https://seekingalpha.com/article/4629292-hon-hai-q2-results-missed-expectations-rating-downgrade"
+        },
+        {
+          "title": "Hon Hai Precision Industry Co Ltd (TPE:2317) Q1 2025: Everything You Need To Know Ahead Of Earnings",
+          "snippet": "In the previous quarter of December ... (TPE:2317) actual earnings were $3.23 per share, which <strong>missed analysts&#x27; earnings expectations of $3.83 per share by -15.62%</strong>. After releasing the results, Hon Hai Precision Industry Co Ltd ...",
+          "url": "https://finance.yahoo.com/news/hon-hai-precision-industry-co-131553707.html"
+        },
+        {
+          "title": "2317 - Hon Hai Precision Industry Co Ltd Chart | Morningstar",
+          "snippet": "Check out our 2317 stock chart to see a history of performance, current stock value, and a timeline of financial events &amp; indicators for a full analysis today.",
+          "url": "https://www.morningstar.com/stocks/xtai/2317/chart"
+        },
+        {
+          "title": "Hon Hai Precision Industry (TWSE:2317) - Stock Analysis - Simply Wall St",
+          "snippet": "EPS is expected to grow by 34% over the next 3 years, which should provide support to the dividend and adequate earnings cover. ... Hon Hai Precision Industry Co., Ltd. approved the dividend of TWD 5.4 per share for the year ended December 31, 2023. ... First quarter 2024 results: EPS: NT$1.59 (up from NT$0.93 in 1Q 2023). Revenue: NT$1.32t (down 9.5% from 1Q 2023). Net income: NT$22.0b (up 72% from 1Q 2023). Profit margin: 1.7% (up from 0.9% in 1Q 2023). The increase in margin was driven by lower expenses. Revenue missed analyst estimates by 3.7%. Earnings per share (EPS) also missed analyst estimates by 25%. Revenue is forecast to grow 10% p.a.",
+          "url": "https://simplywall.st/stocks/tw/tech/twse-2317/hon-hai-precision-industry-shares"
+        }
+      ],
+      "Foxconn OR \"Foxconn Industrial Internet\" 601138 accounting irregularity OR restatement OR auditor concern": [
+        {
+          "title": "Internal Audit - Hon Hai Technology Group",
+          "snippet": "The company&#x27;s internal audit business is based on the results of the risk assessment to prepare an annual audit plan, clearly specifying the audit items, time, procedures and methods. Auditors conduct regular and project audits on a regular or irregular basis.",
+          "url": "https://www.foxconn.com/en-us/investor-relations/corporate-governance/internal-audit"
+        },
+        {
+          "title": "Foxconn",
+          "snippet": "manager, accounting director, financial director, internal auditors, and R&amp;D supervisor had resigned or been",
+          "url": "https://www.foxconn.com/s3/reports/shareholders-meetings/2021/Annual%20Report.pdf"
+        },
+        {
+          "title": "Auditor Finds 'Serious Issues' At Apple Supplier Foxconn | GBH",
+          "snippet": "A review completed by the Fair Labor Association found &quot;significant issues with working conditions at three factories in China operated by Apple&#x27;s major\u2026",
+          "url": "https://www.wgbh.org/news/2012-03-29/auditor-finds-serious-issues-at-apple-supplier-foxconn"
+        }
+      ],
+      "Foxconn writedown OR impairment OR failed investment Sharp OR Vedanta OR Lordstown OR Wisconsin subsidy clawback": [
+        {
+          "title": "Foxconn, Sharp shares slide after Japan firm's surprise writedown | Reuters",
+          "snippet": "Shares of Taiwan&#x27;s Foxconn and its display affiliate Sharp Corp fell on Friday after the Japanese firm reported a surprise <strong>$1.9 billion loss due to writedowns related to its flat-screen assets</strong>.",
+          "url": "https://www.reuters.com/technology/shares-japans-sharp-tumble-after-19-bln-full-year-loss-2023-05-12/"
+        },
+        {
+          "title": "Foxconn, Sharp shares slide after Japan firm's surprise writedown",
+          "snippet": "The biggest impairment of <strong>188.5 billion yen came from a LCD subsidiary</strong>, and a Sharp spokesperson said the majority of that loss was attributable to its large-size flat screen business Sakai Display Products Corp (SDP).",
+          "url": "https://finance.yahoo.com/news/shares-japans-sharp-tumble-1-005640474.html"
+        },
+        {
+          "title": "Foxconn, Sharp shares slide after Japan firm's surprise writedown - The Business Times",
+          "snippet": "The biggest impairment of <strong>188.5 billion yen came from a LCD subsidiary</strong>, and a Sharp spokesperson said the majority of that loss was attributable to its large-size flat screen business Sakai Display Products (SDP).",
+          "url": "https://www.businesstimes.com.sg/companies-markets/foxconn-sharp-shares-slide-after-japan-firms-surprise-writedown"
+        },
+        {
+          "title": "Breakingviews - Foxconn's global dealmaking suffers Sharp shock",
+          "snippet": "The $46 billion iPhone supplier, formally known as Hon Hai Precision Industry (2317.TW), opens new tab, rescued the Japanese electronics group in 2016 with a promise to turn it around. Sharp&#x27;s surprise $1.6 billion writedown in the three months to March casts doubt on the Taiwanese group&#x27;s grip on its investment - and its ability to strike similar deals.",
+          "url": "https://www.reuters.com/breakingviews/foxconns-global-dealmaking-suffers-sharp-shock-2023-05-24/"
+        },
+        {
+          "title": "Here's a short timeline of Foxconn's plans and development in Wisconsin",
+          "snippet": "Wisconsin officials hailed Foxconn&#x27;s arrival, but despite massive public investment the technology company largely failed to deliver what it promised.",
+          "url": "https://www.jsonline.com/story/money/business/2023/11/10/what-happened-to-foxconn-in-wisconsin-a-timeline/71535498007/"
+        }
+      ]
+    },
+    "legal": {
+      "Foxconn OR \"Hon Hai Precision\" lawsuit OR class action OR settlement patent OR antitrust": [
+        {
+          "title": "FCI USA, INC. v. HON HAI PRECISION INDUSTRY, No. C-03-4519 JCS | Casetext Search + Citator",
+          "snippet": "F (Settlement Agreement (attached to Joint Stipulation of Dismissal)). Under the Settlement Agreement, <strong>FCI granted Foxconn a license for one-piece Level 2 Sockets manufactured by Foxconn in exchange for a lump sum payment and on-going royalties</strong>. Id. The Settlement Agreement also contained the ...",
+          "url": "https://casetext.com/case/fci-usa"
+        },
+        {
+          "title": "Lotes Co., Ltd. v. Hon Hai Precision Industry Co., Ltd et al",
+          "snippet": "A New York federal judge on Tuesday ... standard-essential patents covering USB 3.0 connectors, <strong>ruling the alleged misconduct fell outside the scope of U.S. antitrust laws</strong>....",
+          "url": "https://www.law360.com/cases/5075a89993a2165ac500439f"
+        },
+        {
+          "title": "Lotes Co., Ltd. v. Hon Hai Precision Industry Co. \u2013 CourtListener.com",
+          "snippet": "The crux of Lotes\u2019s complaint is its claim that the defendants have brazenly flouted their obligations under the Contributors Agreement to provide RAND\u2010Zero licenses to adopters of the USB 3.0 standard. To begin with, Lotes alleges that \u201cHon Hai and Foxconn have contacted the customers and distributors of Lotes to allege that they have the sole patent rights on USB 3.0 connectors and would sue them if they did not buy from Foxconn.\u201d J.A.",
+          "url": "https://www.courtlistener.com/opinion/2677019/lotes-co-ltd-v-hon-hai-precision-industry-co/"
+        },
+        {
+          "title": "Lotes Co. v. Hon Hai Precision Indus. Co. (Lotes Co. v. Hon Hai Precision Indus. Co., 753 F.3d 395 (2nd Cir. 2014)) - vLex United States | vLex (Part of Clio)",
+          "snippet": "They also are involved in making, assembling, and distributing electronic components and devices that incorporate USB connectors. Defendant\u2013Appellee Hon Hai Precision Industry Co., Ltd. (\u201cHon Hai\u201d) is a Taiwanese corporation that is one of the world&#x27;s largest manufacturers of electronic components, including USB connectors. Defendant\u2013Appellee Foxconn International Holdings, Ltd.",
+          "url": "https://case-law.vlex.com/vid/lotes-co-v-hon-892443765"
+        },
+        {
+          "title": "Psc Computer Products, Inc. v. Foxconn International, Inc. And Hon Hai Precision Industry Co., Ltd. \u2013 CourtListener.com",
+          "snippet": "(\u201cPSC\u201d) appeals the final judgment of the United States District Court for the Central District of California granting Foxconn International, Inc. and Hon Hai Precision Industry Co. Ltd. (collectively \u201cFoxconn\u201d) summary judgment of non-infringement of U.S. Patent No.",
+          "url": "https://www.courtlistener.com/opinion/784862/psc-computer-products-inc-v-foxconn-international-inc-and-hon-hai/"
+        }
+      ],
+      "Foxconn China tax audit OR land use investigation OR regulatory probe 2023..2025": [
+        {
+          "title": "Taiwan's Foxconn faces China tax probe, seen as politically motivated -sources | Reuters",
+          "snippet": "On Sunday, China&#x27;s state-backed ... audits and that <strong>China&#x27;s natural resources department had conducted on-site investigations on land use by Foxconn enterprises in Henan and Hubei provinces and elsewhere</strong>....",
+          "url": "https://www.reuters.com/technology/foxconn-shares-drop-after-chinese-report-tax-audit-land-use-probe-2023-10-23/"
+        },
+        {
+          "title": "Foxconn faces tax audit, land use probe, Chinese state media reports | Reuters",
+          "snippet": "<strong>China&#x27;s natural resources department also conducted on-site investigations on the land use of Foxconn enterprises in Henan and Hubei provinces and elsewhere</strong>, the nationalist tabloid the Global Times reported.",
+          "url": "https://www.reuters.com/technology/foxconn-faces-tax-audit-land-use-probe-chinese-state-media-2023-10-22/"
+        },
+        {
+          "title": "Foxconn faces tax audit, land use probe - Chinese state media",
+          "snippet": "<strong>Taiwan&#x27;s Foxconn, the largest supplier of Apple iPhones, is the subject of tax audits in China at some of its key subsidiaries, suspected of violating laws and regulations</strong>, Chinese state media reported on Sunday.China&#x27;s natural resources department ...",
+          "url": "https://www.thestandard.com.hk/breaking-news/section/3/209542/Foxconn-faces-tax-audit,-land-use-probe---Chinese-state-media"
+        },
+        {
+          "title": "foxxonn tax audit: Foxconn subsidiaries in China face tax audit, land use probe: report - The Economic Times",
+          "snippet": "<strong>China&#x27;s natural resources department conducted on-site investigations on the land use of enterprises of Foxconn in Henan, Hubei provinces and other places</strong>",
+          "url": "https://economictimes.indiatimes.com/tech/technology/foxconn-subsidiaries-faces-tax-audit-land-use-probe-report/articleshow/104619065.cms"
+        },
+        {
+          "title": "Foxconn faces tax audit, land use probe: Chinese state media | The Straits Times",
+          "snippet": "BEIJING - Foxconn Technology Group, Apple Inc\u2019s largest supplier of iPhones, has been subjected to tax audits at some of its key subsidiaries, <strong>suspected of violating laws and regulations</strong>, Chinese state media reported on Sunday.",
+          "url": "https://www.straitstimes.com/asia/east-asia/foxconn-faces-tax-audit-land-use-probe-chinese-state-media"
+        }
+      ],
+      "Foxconn executive bribery OR corruption OR trade secret theft indictment OR prosecution": [
+        {
+          "title": "Former Samsung exec charged with giving secrets to Foxconn",
+          "snippet": "SEOUL, South Korea: An indictment by South Korean prosecutors claimed that after winning a contract with Taiwan&#x27;s Foxconn in 2018, <strong>former Samsung executive Choi Jinseog tapped his former employer&#x27;s supplier network to steal secrets</strong>, which enabled ...",
+          "url": "https://www.mexicostar.com/news/273884924/former-samsung-exec-charged-with-giving-secrets-to-foxconn"
+        },
+        {
+          "title": "Foxconn in China bribery investigation",
+          "snippet": "The admission comes after a report in Taiwan\u2019s Next Magazine alleged Foxconn managers were accepting bribes from parts suppliers.",
+          "url": "https://hartfordbusiness.com/article/foxconn-in-china-bribery-investigation/"
+        },
+        {
+          "title": "Foxconn senior management arrested for alleged millions in kickbacks - ZDNET",
+          "snippet": "<strong>Taiwan has arrested around a dozen managers at Foxconn on suspicion of soliciting several million US dollars in bribes from iPhone parts suppliers</strong>, according to a Tencent report on Wednesday.",
+          "url": "https://www.zdnet.com/article/foxconn-senior-management-arrested-for-alleged-millions-in-kickbacks/"
+        },
+        {
+          "title": "Northern District of California | Former Apple Employee Indicted On Theft Of Trade Secrets | United States Department of Justice",
+          "snippet": "SAN JOSE - A federal grand jury in San Jose indicted <strong>Xiaolang Zhang</strong> on Thursday, July 12, 2018, for theft of trade secrets, announced Acting United States Attorney Alex G. Tse and Federal Bureau of Investigations, Special Agent in Charge John ...",
+          "url": "https://fbi.gov/contact-us/field-offices/sanfrancisco/news/press-releases/former-apple-employee-indicted-on-theft-of-trade-secrets"
+        },
+        {
+          "title": "Southern District of New York | Trader Arrested For Stealing Trade Secrets From Global Quantitative Trading Firm | United States Department of Justice",
+          "snippet": "Edward Y. Kim, the Acting United ... Investigation (\u201cFBI\u201d), announced today the unsealing of an Indictment charging <strong>CHEUK FUNG RICHARD HO</strong> with theft and attempted theft of trade secrets....",
+          "url": "https://fbi.gov/contact-us/field-offices/newyork/news/trader-arrested-for-stealing-trade-secrets-from-global-quantitative-trading-firm"
+        }
+      ]
+    }
+  }
+}

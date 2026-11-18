@@ -4,10 +4,9 @@ import json
 
 
 def parse_json_object(text: str) -> dict:
-    text = text.strip()
-    if text.startswith("```"):
-        text = text.split("```")[1]
-        if text.startswith("json"):
-            text = text[4:]
-        text = text.strip()
-    return json.loads(text)
+    """Parse the first JSON object in `text`, ignoring code fences and any prose around it."""
+    start = text.find("{")
+    if start == -1:
+        raise ValueError(f"no JSON object found in model output: {text!r}")
+    obj, _ = json.JSONDecoder().raw_decode(text[start:])
+    return obj

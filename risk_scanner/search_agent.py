@@ -13,6 +13,7 @@ import anthropic
 import requests
 from dotenv import load_dotenv
 
+from risk_scanner.context import clean_context, format_context_block
 from risk_scanner.json_utils import parse_json_object
 
 load_dotenv()
@@ -28,7 +29,7 @@ supplier name below, generate 2-3 targeted web search queries for EACH of
 these five categories: labor, environmental, sanctions, financial, legal.
 
 Supplier: {supplier_name}
-{context_line}
+{context_block}
 
 Rules:
 - Queries should be specific enough to surface real news, not generic
@@ -36,9 +37,18 @@ Rules:
   labor violation OR strike OR unsafe conditions")
 - Include the supplier's likely parent company or alternate names if you
   can infer them, since red flags sometimes attach to the parent entity
+- If a parent company is given in the context, search it directly in some of
+  the queries for each category, in addition to the supplier itself
+- If a country is given, use it where it helps tell similarly named
+  companies apart. If a website domain is given, use it in a few queries per
+  category, since the domain points at the right company — but not in every
+  query
+- Do NOT append the industry or the city to every query. News articles often
+  leave them out, and a query that requires them hides real findings.
+  Industry and city are for verifying results later, not blanket search terms
 - For sanctions specifically, include a query checking against the
-  supplier's country of operation, since sanctions lists are
-  country-specific
+  supplier's country of operation (the supplied country if there is one),
+  since sanctions lists are country-specific
 - Do not invent facts about the supplier — you are only generating search
   queries, not answering yet
 
@@ -54,13 +64,15 @@ Output as JSON:
 
 def generate_search_queries(
     supplier_name: str,
-    context: str | None = None,
+    context: dict | None = None,
     client: anthropic.Anthropic | None = None,
 ) -> dict:
     """Stage 2 step 1: ask Claude what to search for. Returns {category: [queries]}."""
     client = client or anthropic.Anthropic()
-    context_line = f"Context: {context}" if context else ""
-    prompt = QUERY_GENERATION_PROMPT.format(supplier_name=supplier_name, context_line=context_line)
+    prompt = QUERY_GENERATION_PROMPT.format(
+        supplier_name=supplier_name,
+        context_block=format_context_block(context),
+    )
 
     response = client.messages.create(
         model="claude-opus-5",
@@ -114,10 +126,20 @@ def save_scan_result(result: dict, output_dir: str = OUTPUT_DIR) -> str:
     return path
 
 
-def scan_supplier(supplier_name: str, context: str | None = None) -> dict:
+def build_scan_result(supplier_name: str, queries: dict, raw_results: dict, context: dict | None = None) -> dict:
+    """The stage 2 output shape. supplier_context is included only when some context was given."""
+    result = {"supplier_name": supplier_name}
+    cleaned = clean_context(context)
+    if cleaned:
+        result["supplier_context"] = cleaned
+    result.update(queries=queries, raw_results=raw_results)
+    return result
+
+
+def scan_supplier(supplier_name: str, context: dict | None = None) -> dict:
     """Full stage 2: generate queries, run them all, save the result to output/, and return it."""
     queries = generate_search_queries(supplier_name, context)
     raw_results = run_all_searches(queries)
-    result = {"supplier_name": supplier_name, "queries": queries, "raw_results": raw_results}
+    result = build_scan_result(supplier_name, queries, raw_results, context)
     result["saved_to"] = save_scan_result(result)
     return result

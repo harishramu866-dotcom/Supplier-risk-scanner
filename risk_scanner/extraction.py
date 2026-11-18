@@ -13,6 +13,8 @@ from datetime import datetime
 import anthropic
 from dotenv import load_dotenv
 
+from risk_scanner.context import clean_context, format_context_block
+from risk_scanner.identity import combine_identity_checks, normalize_identity
 from risk_scanner.json_utils import parse_json_object
 from risk_scanner.validation import validate_category_result
 
@@ -25,15 +27,37 @@ a supplier. Review the results below and determine the status of this
 category for this supplier.
 
 Supplier: {supplier_name}
+{context_block}
 Category: {category}  (one of: labor, environmental, sanctions, financial, legal)
 Search results:
 {results_block}
 
 Instructions:
-1. First, verify relevance. Some results may be about a different company
-   with a similar name, or may not actually be about {category} at all.
-   Discard anything that isn't clearly about THIS supplier and THIS category.
-2. For each genuine, relevant finding, write:
+1. First, verify relevance and identity. Some results may be about a
+   different company with a similar name, or may not actually be about
+   {category} at all.
+   - Compare each result against the supplied context (country, website
+     domain, industry, parent company, city), when there is any. Discard
+     results that clearly point to a different entity: a different country,
+     a different website domain, a different industry, or a different parent
+     company.
+   - Do NOT discard a result just because it leaves a context detail out.
+     News articles often omit the city or industry; only a clear mismatch is
+     evidence of a different company.
+   - Discard anything that isn't clearly about THIS supplier and THIS category.
+2. Decide identity_check.status:
+   - "Ambiguous" if the results suggest two or more plausible, different
+     companies and the supplied context cannot tell which one is the
+     supplier. Do NOT attribute findings to either company: return
+     "findings": [] and "status": "Unknown" for this category, and say why
+     in the note.
+   - "Confirmed" only if something concrete supports that the results you
+     kept are about the supplied company: a matching website domain,
+     country, or parent company. Name what matched in the note. A matching
+     name alone is not enough.
+   - "Unverified" in every other case, and always if no context was supplied.
+   The note is one sentence explaining why.
+3. For each genuine, relevant finding, write:
    - claim: a one-sentence factual statement of what was found (not your
      opinion — just what the source says happened)
    - source: the exact URL it came from
@@ -41,7 +65,7 @@ Instructions:
      filing, official report) and the claim is specific; "Medium" if the
      source is less authoritative or the claim is vague; "Low" if you're
      genuinely unsure this is reliable
-3. Set status for the category:
+4. Set status for the category:
    - "Flagged" if you have one or more genuine findings
    - "Clear" if you found relevant, reliable results and none show a problem
    - "Unknown" if search results were empty, irrelevant, or too unreliable
@@ -56,7 +80,8 @@ Output as JSON matching this shape:
   "status": "Clear" | "Flagged" | "Unknown",
   "findings": [
     {{ "claim": "...", "source": "https://...", "confidence": "Low" | "Medium" | "High" }}
-  ]
+  ],
+  "identity_check": {{ "status": "Confirmed" | "Ambiguous" | "Unverified", "note": "..." }}
 }}"""
 
 
@@ -69,15 +94,22 @@ def _format_results_block(results_for_category: dict) -> str:
     return "\n".join(lines) if lines else "(no search results returned)"
 
 
-def extract_category_findings(
+def extract_category_with_identity(
     supplier_name: str,
     category: str,
     results_for_category: dict,
+    context: dict | None = None,
     client: anthropic.Anthropic | None = None,
-) -> dict:
+) -> tuple[dict, dict]:
+    """Returns (category result, this category's identity_check).
+
+    An Ambiguous identity forces the category to Unknown with no findings, even if the
+    model returned some, so findings are never attributed to either candidate company.
+    """
     client = client or anthropic.Anthropic()
     prompt = EXTRACTION_PROMPT.format(
         supplier_name=supplier_name,
+        context_block=format_context_block(context),
         category=category,
         results_block=_format_results_block(results_for_category),
     )
@@ -90,29 +122,61 @@ def extract_category_findings(
 
     text = "".join(block.text for block in response.content if block.type == "text")
     result = parse_json_object(text)
+    identity = normalize_identity(result.pop("identity_check", None), context)
+    if identity["status"] == "Ambiguous":
+        result = {"status": "Unknown", "findings": []}
     validate_category_result(result)
-    return result
+    return result, identity
 
 
-def save_extraction_result(supplier_name: str, categories: dict, output_dir: str = OUTPUT_DIR) -> str:
+def extract_category_findings(
+    supplier_name: str,
+    category: str,
+    results_for_category: dict,
+    context: dict | None = None,
+    client: anthropic.Anthropic | None = None,
+) -> dict:
+    return extract_category_with_identity(supplier_name, category, results_for_category, context, client)[0]
+
+
+def save_extraction_result(
+    supplier_name: str,
+    categories: dict,
+    supplier_context: dict | None = None,
+    identity_check: dict | None = None,
+    output_dir: str = OUTPUT_DIR,
+) -> str:
     """Save a stage 3 result to output/<supplier>_extraction_<timestamp>.json. Returns the path."""
     os.makedirs(output_dir, exist_ok=True)
     slug = re.sub(r"[^a-z0-9]+", "_", supplier_name.lower()).strip("_")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     path = os.path.join(output_dir, f"{slug}_extraction_{timestamp}.json")
+
+    result = {"supplier_name": supplier_name}
+    cleaned = clean_context(supplier_context)
+    if cleaned:
+        result["supplier_context"] = cleaned
+    if identity_check:
+        result["identity_check"] = identity_check
+    result["categories"] = categories
+
     with open(path, "w", encoding="utf-8") as f:
-        json.dump({"supplier_name": supplier_name, "categories": categories}, f, indent=2)
+        json.dump(result, f, indent=2)
     return path
 
 
-def extract_all_categories(supplier_name: str, raw_results: dict) -> dict:
-    """Run extraction once per category, save the combined result to output/, and return it.
+def extract_all_categories(
+    supplier_name: str, raw_results: dict, context: dict | None = None
+) -> tuple[dict, dict]:
+    """Run extraction once per category, save the combined result to output/.
 
-    raw_results: stage 2's {category: {query: [hits]}}.
+    raw_results: stage 2's {category: {query: [hits]}}. Returns (categories, identity_check).
     """
-    categories = {
-        category: extract_category_findings(supplier_name, category, results_for_category)
-        for category, results_for_category in raw_results.items()
-    }
-    save_extraction_result(supplier_name, categories)
-    return categories
+    categories, identities = {}, {}
+    for category, results_for_category in raw_results.items():
+        categories[category], identities[category] = extract_category_with_identity(
+            supplier_name, category, results_for_category, context
+        )
+    identity_check = combine_identity_checks(context, identities)
+    save_extraction_result(supplier_name, categories, context, identity_check)
+    return categories, identity_check
